@@ -12,6 +12,7 @@
   --border-header-line: #ececec;
   --example-border: #eeeeee;
   --social-color: #afb1b8;
+  rgba(255, 255, 255, 0.1)
 }
 *,
 *::before,
@@ -479,6 +480,29 @@ body {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+
+  /* outline: 1px solid red; */
+}
+.footer-container-address {
+  outline: 1px solid red;
+  margin-right: 70px;
+}
+.footer-social-icons {
+  margin: 0px;
+  padding: 0px;
+  outline: 1px solid red;
+}
+.footer-social-titel {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--first-color);
 }
 /* portfolio */
 .section {

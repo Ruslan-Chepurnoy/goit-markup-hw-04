@@ -375,6 +375,57 @@ body {
   fill: var(--first-color);
   background-color: var(--accent-color);
 }
+/* client */
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--first-color);
+}
+.client-titel {
+  min-height: 42px;
+  text-align: center;
+  margin-bottom: 50px;
+
+  color: var(--primary-color);
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.client-menu {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-between;
+  /* outline: 1px solid red; */
+}
+.client-item {
+  display: block;
+}
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-color);
+  border-radius: 4px;
+}
+.client-icon {
+  fill: var(--social-color);
+}
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+}
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+  fill: var(--accent-color);
+}
 
 /* footer */
 .footer {

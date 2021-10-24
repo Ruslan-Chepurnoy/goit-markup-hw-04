@@ -154,6 +154,17 @@ body {
   width: 16px;
   height: 12px;
 }
+.icon-phone {
+  margin-right: 10px;
+  fill: var(--second-color);
+  vertical-align: middle;
+  width: 10px;
+  height: 16px;
+}
+.link:hover .icon-auth,
+.link:focus .icon-auth {
+  fill: var(--accent-color);
+}
 
 /* .link-icon::before {
   /* display: block; */
@@ -242,6 +253,30 @@ body {
 .list .item + .item {
   margin-left: 30px;
 }
+.item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: 70px, 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--section-team-background-color);
+  border-radius: 4px;
+  /* outline: 1px solid red; */
+}
+.item-antena::before {
+  background-image: url(../images/antenna.svg);
+}
+.item-clock::before {
+  background-image: url(../images/clock.svg);
+}
+.item-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.item-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
 .features-titel {
   margin-bottom: 10px;
   width: 270px;
@@ -316,10 +351,9 @@ body {
   display: block;
   max-width: 100%;
   width: 270px;
-
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--first-color);
 }
 .team-img {

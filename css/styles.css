@@ -166,21 +166,6 @@ body {
   fill: var(--accent-color);
 }
 
-/* .link-icon::before {
-  /* display: block; */
-/* content: '';
-  width: 16px;
-  height: 12px;
-  outline: 1px solid red;
-  margin-right: 10px; */
-
-/* margin-right: 10px;
-  outline: 1px solid red;
-  background-position: center;
-
-  fill: none;
-  stroke: #f44336; */
-
 /* hero */
 .hero {
   display: flex;
@@ -597,6 +582,12 @@ body {
 .list-example {
   flex-wrap: wrap;
 }
+.example:hover,
+.example:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .example {
   width: 370px;
   margin-bottom: 30px;

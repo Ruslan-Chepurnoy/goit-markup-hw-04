@@ -12,7 +12,7 @@
   --border-header-line: #ececec;
   --example-border: #eeeeee;
   --social-color: #afb1b8;
-  rgba(255, 255, 255, 0.1)
+  --footer-social-color: rgba(255, 255, 255, 0.1);
 }
 *,
 *::before,
@@ -140,24 +140,35 @@ body {
 .auth-nav .item + .item {
   margin-left: 50px;
 }
-.item-header {
-  display: flex;
+.link-icon {
+  display: inline-flex;
+  align-items: center;
+  color: var(--first-color);
+  text-decoration: none;
+  list-style: none;
 }
-.link-icon::before {
+.icon-email {
+  margin-right: 10px;
+  fill: var(--second-color);
+  vertical-align: middle;
+  width: 16px;
+  height: 12px;
+}
+
+/* .link-icon::before {
   /* display: block; */
-  content: '';
+/* content: '';
   width: 16px;
   height: 12px;
   outline: 1px solid red;
-  margin-right: 10px;
+  margin-right: 10px; */
 
-  /* margin-right: 10px;
+/* margin-right: 10px;
   outline: 1px solid red;
   background-position: center;
 
   fill: none;
   stroke: #f44336; */
-}
 
 /* hero */
 .hero {
@@ -488,13 +499,13 @@ body {
   /* outline: 1px solid red; */
 }
 .footer-container-address {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   margin-right: 70px;
 }
 .footer-social-icons {
   margin: 0px;
   padding: 0px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 .footer-social-titel {
   margin-bottom: 20px;
@@ -504,6 +515,16 @@ body {
   text-transform: uppercase;
   color: var(--first-color);
 }
+.social-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--footer-social-color);
+}
+.icon-footer {
+  fill: var(--first-color);
+}
+
 /* portfolio */
 .section {
   padding-top: 94px;

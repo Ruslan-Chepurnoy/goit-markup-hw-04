@@ -361,9 +361,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  outline: 1px solid red;
 }
-
 .social-icon {
   fill: var(--social-color);
 }
@@ -372,9 +370,10 @@ body {
   background-color: var(--accent-color);
   fill: var(--first-color);
 }
-.social-icon:hover,
-.social-icon:focus {
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
   fill: var(--first-color);
+  background-color: var(--accent-color);
 }
 
 /* footer */

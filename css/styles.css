@@ -558,8 +558,9 @@ body {
   margin-left: 8px;
 }
 .button-example {
+  display: block;
   padding: 6px 22px;
-
+  text-decoration: none;
   color: var(--primary-text-color);
   background-color: var(--section-team-background-color);
   font-family: Roboto;
